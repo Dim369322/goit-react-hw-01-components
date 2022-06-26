@@ -11,22 +11,22 @@ export const App = () => {
       return (
             <div
               style={{
-                  display: 'flex',
+                display: 'flex',
                 alignItems: 'flex-start',
                 background: '#F8F8F8'
               }}
             >
-                        <Profile 
-                  username={user.username}
-                  tag={user.tag}
-                  location={user.location}
-                  avatar={user.avatar}
-                  stats={user.stats}
+             <Profile 
+             username={user.username}
+             tag={user.tag}
+             location={user.location}
+             avatar={user.avatar}
+             stats={user.stats}
                    />
-                  <Statistics title="Upload stats" stats={data} />
-                  <Statistics stats={data} />
-                  <FriendList friends={friends} />
-                  <TransactionHistory items={transactions} />
+             <Statistics title="Upload stats" stats={data} />
+             <Statistics stats={data} />
+             <FriendList friends={friends} />
+             <TransactionHistory items={transactions} />
             </div>
       );
 };
