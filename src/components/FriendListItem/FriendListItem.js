@@ -1,8 +1,8 @@
 import styles from 'components/FriendListItem/FriendListItem.module.css';
 
-export const FriendListItem = ({ id, isOnline, avatar, name }) => {
+export const FriendListItem = ({ isOnline, avatar, name }) => {
   return (
-    <li key={id} className={styles.item}>
+    <li className={styles.item}>
       <span className={isOnline ? styles.status : styles.statusOffline}>
         {isOnline}
       </span>

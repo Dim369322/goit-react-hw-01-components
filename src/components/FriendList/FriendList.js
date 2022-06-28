@@ -7,6 +7,7 @@ export const FriendList = ({ friends }) => {
     <ul className={styles.friendList}>
       {friends.map(({ id, isOnline, avatar, name }) => (
         <FriendListItem
+          key={id}
           id={id}
           isOnline={isOnline}
           avatar={avatar}
